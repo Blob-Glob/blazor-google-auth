@@ -1,0 +1,18 @@
+﻿@inject NavigationManager Navigation
+@inject Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider AuthenticationStateProvider
+
+<h3>Logging out...</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // Log out the user
+        await LogoutUser();
+    }
+
+    private async Task LogoutUser()
+    {
+        // Redirect to the authentication logout endpoint
+        Navigation.NavigateTo("/logout", forceLoad: true);
+    }
+}
