@@ -7,4 +7,8 @@
     <UserSecretsId>664c0674-8961-450b-bd24-91e14374c14f</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="9.0.0" />
+  </ItemGroup>
+
 </Project>
